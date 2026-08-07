@@ -1,5 +1,7 @@
 package com.rehman.basics;
 
+import java.util.Scanner;
+
 class Student {
     String name;
     int age;
@@ -34,6 +36,50 @@ public class Reference_VariableAndObject {
 
 //        By creating reference object we are creating the actual memory in heap
 //        Hence there are all these methods exist in that reference-variable
+
+
+//        Reference_Variable_Reference
+
+        Student ref = new Student();
+
+//        ! important
+//        Lets understand the meaning of above line
+//        I --> Student
+//        --> the datatype for reference variable
+//        --> means the type of variable and function will refer the datatype from this
+
+//        II --> ref
+//        --> reference variable name
+//        --> the name which is at heap and refer by stack
+
+//        III --> new
+//        --> allocate new memory space
+
+//        IV --> Student()
+//        --> calling the default constructor to create object of that same class
+
+
+
+        /*
+         *
+
+         # Stack
+
+         Variable   Value
+         --------   -----
+         ref        101
+
+
+         # Heap
+
+         Address   Object
+         -------   ----------------
+         101       Student Object
+                   name = null
+                   age = 0
+
+         *
+         * */
 
     }
 }
