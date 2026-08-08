@@ -62,6 +62,7 @@ public class Reference_VariableAndObject {
 
         /*
          *
+         # Visual Representation of Heap-Stack while creating an object / reference
 
          # Stack
 
