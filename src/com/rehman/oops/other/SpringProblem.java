@@ -67,13 +67,13 @@ STACK                           HEAP
 │ main()         │              │ RehmanInstitute object  │
 │                │              │                         │
 │ rk ────────────│────────────> │ CourseInterFace course  │
-│                │              │                     │   │
-└────────────────┘              └─────────────────────│───┘
-                                                      │
-                                                      ↓
-                                            ┌─────────────────────────┐
-                                            │ Java_Course object      │
-                                            └─────────────────────────┘
+│                │              │                 │       │
+└────────────────┘              └─────────────────│───────┘
+                                                  │
+                                                  ↓
+                                 ┌─────────────────────────┐
+                                 │ Java_Course object      │
+                                 └─────────────────────────┘
 
 
 course.buyCourse(); // do this the course has address of java-class-object
