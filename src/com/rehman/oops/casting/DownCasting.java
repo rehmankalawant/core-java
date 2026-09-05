@@ -1,5 +1,10 @@
 package com.rehman.oops.casting;
 
+//  !important
+//  Child2 obj1 = (Child2) obj;
+//  The matter is only that the object which is created referring whom , and where is he
+//  here the parent type of object  referring the child is at up - so downcast
+
 // Casting from Parent to Child
 
 // Convert datatype from Parent to Child

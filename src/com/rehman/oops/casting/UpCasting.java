@@ -2,6 +2,11 @@ package com.rehman.oops.casting;
 
 // Casting from Child to Parent
 
+//  !important
+//  Parent1 obj = (Parent1) new Child1();
+//  The matter is only that the object which is created referring whom , and where is he
+//  here child object referring parent - parent is at up - so upcast
+
 // Type casting the child-object with parent-reference
 
 // Convert datatype from Child to Parent
@@ -25,6 +30,10 @@ class Child1 extends Parent1 {
     public void showC() {
         System.out.println("Inside Child Show");
     }
+
+    public void specialChild() {
+        System.out.println("Special Child Method Called");
+    }
 }
 
 
@@ -37,7 +46,7 @@ public class UpCasting {
 //        new --> Memory allocation
 //        Child --> Object of type Child
 
-//        Parent obj1 = new Child();      // Also valid for below.
+//        Parent obj1 = new Child();        // Also valid for below.
 //        Like below the (Parent) is always there by default , but we can't see it
 //        (Parent) is implicitly there behind the scene
 //        And it is not compulsory to write that (Parent)
@@ -45,6 +54,7 @@ public class UpCasting {
         Parent1 obj = (Parent1) new Child1();
 
         obj.showP(); // only parent methods are callable
+
 
 //        2 Reasons
 //        1. All methods parent have child have that because inheritance and object-of-type is `Child` here
